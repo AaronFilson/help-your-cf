@@ -2,20 +2,61 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab|Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="/vendor/styles/normalize.css">
     <title>Help Your Code Fellows</title>
   </head>
   <body>
+    <header>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Help Your Code Fellows!</a>
+              </div>
+             <div id="navbar" class="collapse navbar-collapse">
+               <ul class="nav navbar-nav">
+                 <li><a href="/" class="icon-home"> Home</a></li>
+                 <li><a href="/about" class="icon-address-book"> About</a></li>
+                 <li><a href="/productivity" class="icon-address-book"> Productivity</a></li>
+
+                 <li><a href="https://twitter.com/CodeFellows" target="_blank" class="icon-twitter3"> Twitter</a></li>
+                 <li><a href="http://github.com/codefellows" target="_blank" class="icon-github"> GitHub</a></li>
+               </ul>
+             </div><!--/.nav-collapse -->
+         </div>
+       </nav>
+     </header>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="site-title">
+          Help Your Code Fellows
+        </h1>
+        <h2>Hi!</h2>
+      </div>
+    </div>
+
     <main>
       <section id="home">Home</section>
       <section id="content"></section>
     </main>
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
     <script src="vendor/jquery-2.1.4.min.js"></script>
+    <script src="/vendor/scripts/bootstrap.min.js"></script>
+    <script src="vendor/handlebars-v4.0.5.js"></script>
     <script src="data/resource.json"></script>
     <script src="vendor/html5sql.js"></script>
     <script src="scripts/webdb.js"></script>
     <script src="scripts/database.js"></script>
     <script src="scripts/resourceController.js"></script>
+    <script src="scripts/resourceView.js"></script>
     <script src="scripts/router.js"></script>
   </body>
 </html>
