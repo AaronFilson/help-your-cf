@@ -17,6 +17,5 @@ function appendProductivityToPage(templateFunction){
 }
 
 function loadProductivityTemplate(){
-  $.get('/templates/productivityTemplate.html', compileTheProductivityTemplate)
-  .done(console.log('HELP'));
+  $.get('/templates/productivityTemplate.html', compileTheProductivityTemplate);
 }

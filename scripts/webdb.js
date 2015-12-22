@@ -41,7 +41,12 @@ webDB.importResourcesFrom = function (path) {
 };
 
 webDB.insertAllRecords = function(resourceArg) {
-  resourceArg.forEach(webDB.insertRecord);
+  webDB.execute('SELECT * FROM resource;', function(results) {
+    if(results.rows.length <= 0) {
+      resourceArg.forEach(webDB.insertRecord);
+    }
+  });
+
 };
 
 webDB.insertRecord = function(a) {
