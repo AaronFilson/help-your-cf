@@ -9,12 +9,11 @@ function appendProductivityToPage(templateFunction){
     console.log('The selectArray variable is: ');
     console.dir(selectArray);
     //transform the data into what we need for the template
-    selectArray.rows.forEach(function(returnedResource){
-      $('#content').append(templateFunction(returnedResource));
-    });
-
+    for(var i = 0; i < selectArray.rows.length; i++){
+      var temp = new Resource(selectArray.rows[i]);
+      $('#content').append(templateFunction(temp));
+    }
   });
-
 }
 
 function loadProductivityTemplate(){
