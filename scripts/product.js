@@ -8,6 +8,8 @@ product.loadAll = function(callback) {
   webDB.execute('SELECT * FROM resource WHERE contentPage = "productivity";'
   , function(data){
     //transform the data into what we need for the template
+    console.log('product data');
+    console.log(data);
     product.allData = [];
     var arrays = data.rows;
     for (var i=0; i < arrays.length; i++){

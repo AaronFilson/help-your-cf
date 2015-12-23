@@ -6,7 +6,7 @@ page('/about', aboutFunction);
 
 //page('/productivity', productivityFunction);
 
-page('/productivity', productController.index);
+page('/productivity',productController.index);
 
 page('/productivity/:category',
      productController.category,
