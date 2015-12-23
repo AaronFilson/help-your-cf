@@ -2,6 +2,7 @@ var productView = {};
 
 productView.index = function (){
   productView.loadTemplate(product.allData);
+
   productView.handleFilter();
 };
 
@@ -15,23 +16,25 @@ productView.loadTemplate = function(products) {
     });
   };
 
-  productView.renderGroup = function(products) {
-    $('#content')
-    .empty()
-    .fadeIn()
-    .append(
-      products.map(function(product){
-        return productView.template(product);
-      })
-    )
-    .siblings()
-    .hide();
-  };
+
 
 
   if($('#category-filter').children().length === 1 && $('#category-filter').children().length === 1){
     productView.populateFilter();
   }
+};
+
+productView.renderGroup = function(products) {
+  $('#content')
+  .empty()
+  .fadeIn()
+  .append(
+    products.map(function(product){
+      return productView.template(product);
+    })
+  )
+  .siblings()
+  .hide();
 };
 
 productView.populateFilter = function() {
