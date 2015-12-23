@@ -8,6 +8,7 @@ var Resource = function(opts) {
   this.description = opts.description;
   this.author = opts.author;
   this.date = opts.date;
+  this.image = opts.image;
   Resource.all.push(this);
 };
 
