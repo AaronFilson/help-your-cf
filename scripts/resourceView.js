@@ -19,3 +19,22 @@ function appendProductivityToPage(templateFunction){
 function loadProductivityTemplate(){
   $.get('/templates/productivityTemplate.html', compileTheProductivityTemplate);
 }
+
+Resource.categoryPopulate = function() {
+  _.uniq(Resource.all, function(resource) {
+    return resource.category;
+    console.log(resource.category);
+  }).map(function(resource) {
+    var $popCategory = $('#category-filter').append($('<option class="category">').text(resource.category));
+  });
+};
+
+Resource.categoryFilter = function() {
+  $('select').on('change', function(event){
+    event.preventDefault();
+    // use $ to target the children
+    if(event.target.className == 'category') {
+      console.log('HELP');
+    }
+  });
+};

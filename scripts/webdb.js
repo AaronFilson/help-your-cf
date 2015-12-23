@@ -45,6 +45,8 @@ webDB.insertAllRecords = function(resourceArg) {
     if(results.rows.length <= 0) {
       resourceArg.forEach(webDB.insertRecord);
     }
+    Resource.categoryPopulate();
+    Resource.categoryFilter();
   });
 
 };
