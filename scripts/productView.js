@@ -1,17 +1,16 @@
 var productView = {};
 
-productView.index = function () {
+productView.index = function (){
   productView.loadTemplate(product.allData);
+  productView.handleFilter();
 };
 
 productView.loadTemplate = function(products) {
   if (productView.template){
-    productView.handleFilter();
     productView.renderGroup(products);
   }else{
     $.get('/templates/productivityTemplate.html',function(data, msg, xhr) {
       productView.template = Handlebars.compile(data);
-      productView.handleFilter();
       productView.renderGroup(products);
     });
   };
@@ -44,8 +43,6 @@ productView.populateFilter = function() {
     val = resource.category;
     option = '<option value="' + val + '">' + val + '</option>';
     $('#category-filter').append(option);
-    //var $popCategory = $('#category-filter').append($('<option class="category">').text(resource.category));
-    console.log(resource);
   });
 };
 
