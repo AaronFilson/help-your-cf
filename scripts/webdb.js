@@ -35,33 +35,60 @@ webDB.connect = function (database, title, size) {
   html5sql.openDatabase(database, title, size);
 };
 
-webDB.importResourcesFrom = function (path) {
+webDB.importResources = function (path) {
   // Import articles from JSON file
-  $.getJSON(path, webDB.insertAllRecords);
+  $.ajax({
+    type:'HEAD',
+    url:'/data/resource.json',
+    success:webDB.checkEtag
+  });
+  // $.getJSON(path, webDB.insertAllRecords);
 };
 
-webDB.insertAllRecords = function(resourceArg) {
-  webDB.execute('SELECT * FROM resource;', function(results) {
-    if(results.rows.length <= 0) {
-      resourceArg.forEach(webDB.insertRecord);
-    }
+webDB.checkEtag = function(data,message,xhr) {
+  console.log('checkEtag');
+  var eTag = xhr.getResponseHeader('eTag');
+  if (typeof localStorage.resourceEtag === 'undefined'|| localStorage.resourceEtag != eTag){
+    console.log('cache miss!');
+    localStorage.resourceEtag = eTag;
+    webDB.execute(
+      'DELETE FROM resource;',
+      webDB.fetchJSON
+    );
+  }
+};
+
+webDB.fetchJSON = function() {
+  // console.log('delete from resource');
+  $.getJSON('data/resource.json', webDB.insertRecord);
+};
+
+// webDB.insertAllRecords = function(resourceArg) {
+//   webDB.execute('SELECT * FROM resource;', function(results) {
+//     if(results.rows.length <= 0) {
+//       resourceArg.forEach(webDB.insertRecord);
+//     }
+//   });
+//
+// };
+
+webDB.insertRecord = function(data) {
+  // insert article record into database
+  console.log(data);
+  data.forEach(function(a){
+    html5sql.process(
+      [
+        {
+          'sql': 'INSERT INTO resource (url, title, contentPage, category, subcategory, mainContent, description, author, date) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);',
+          'data': [a.url, a.title, a.contentPage, a.category, a.subcategory, a.mainContent, a.description, a.author, a.date]
+        }
+      ],
+     function () {
+       console.log('Success inserting record for ' + a.title);
+     }
+   );
   });
 
-};
-
-webDB.insertRecord = function(a) {
-  // insert article record into database
-  html5sql.process(
-    [
-      {
-        'sql': 'INSERT INTO resource (url, title, contentPage, category, subcategory, mainContent, description, author, date) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);',
-        'data': [a.url, a.title, a.contentPage, a.category, a.subcategory, a.mainContent, a.description, a.author, a.date]
-      }
-    ],
-   function () {
-     console.log('Success inserting record for ' + a.title);
-   }
- );
 };
 
 webDB.setupTables = function () {
