@@ -41,7 +41,14 @@ webDB.importResourcesFrom = function (path) {
 };
 
 webDB.insertAllRecords = function(resourceArg) {
-  resourceArg.forEach(webDB.insertRecord);
+  webDB.execute('SELECT * FROM resource;', function(results) {
+    if(results.rows.length <= 0) {
+      resourceArg.forEach(webDB.insertRecord);
+    }
+    Resource.categoryPopulate();
+    Resource.categoryFilter();
+  });
+
 };
 
 webDB.insertRecord = function(a) {
@@ -74,7 +81,7 @@ webDB.execute = function (sql, callback) {
   html5sql.process(
     sql,
     function (tx, result, resultArray) {
-      callback(resultArray);
+      callback(result);
     }
   );
 };
