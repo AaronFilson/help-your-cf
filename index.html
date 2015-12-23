@@ -43,28 +43,45 @@
       </div>
     </div>
 
+    <select id="category-filter">
+      <option value="" class="default">---Category Filter---</option>
+    </select>
+
     <main>
       <section id="home">Home</section>
-      <section id="content">
-        <select id="category-filter" class="filter">Category Filter</select>
-      </section>
+      <section id="content"></section>
     </main>
-    <div>
-      <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.js"></script>
-      <script src="/vendor/jquery-2.1.4.min.js"></script>
-      <script src="/vendor/bootstrap.min.js"></script>
-      <script src="/vendor/handlebars-v4.0.5.js"></script>
-      <script src="/data/resource.json"></script>
-      <script src="/vendor/html5sql.js"></script>
-      <script src="/scripts/webdb.js"></script>
-      <script src="/scripts/resource.js"></script>
 
-      <script src="/scripts/resourceController.js"></script>
-      <script src="/scripts/resourceView.js"></script>
-      <script src="/scripts/router.js"></script>
-      <script src="/scripts/database.js"></script>
-    </div>
+    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.js"></script>
+    <script src="/vendor/jquery-2.1.4.min.js"></script>
+    <script src="/vendor/bootstrap.min.js"></script>
+    <script src="/vendor/handlebars-v4.0.5.js"></script>
+    <script src="/data/resource.json"></script>
+    <script src="/vendor/html5sql.js"></script>
+    <script src="/scripts/webdb.js"></script>
+    <script src="/scripts/resource.js"></script>
+    <script src="/scripts/database.js"></script>
 
+    <script src="/scripts/resourceController.js"></script>
+    <script src="/scripts/resourceView.js"></script>
+
+    <!-- Model: -->
+   <script src="/scripts/product.js"></script>
+
+
+   <!-- View: -->
+   <script src="/scripts/productView.js"></script>
+
+
+   <!-- Controller: -->
+   <script src="/scripts/productController.js"></script>
+
+
+   <!-- Router: -->
+   <script src="/scripts/router.js"></script>
+
+
+    <script src="/scripts/router.js"></script>
   </body>
 </html>
