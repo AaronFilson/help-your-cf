@@ -8,4 +8,7 @@ var Resource = function(opts) {
   this.description = opts.description;
   this.author = opts.author;
   this.date = opts.date;
+  Resource.all.push(this);
 };
+
+Resource.all = [];
