@@ -2,36 +2,44 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="/vendor/styles/normalize.css" type="text/css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <title>Input Page</title>
   </head>
   <body>
     <form>
       URL: <input type="text" name="url">
       <br>
-      title:<input type="text" name="title">
+      title: <input type="text" name="title">
       <br>
-      contentpage:<input type="text" name="contentPage">
+      contentPage: <input type="text" name="contentPage">
       <br>
-      category:<input type="text" name="category">
+      category: <input type="text" name="category">
       <br>
-      subcategory:<input type="text" name="subcategory">
+      subcategory: <input type="text" name="subcategory">
       <br>
-      maincontent<textarea name="mainContent" rol='6' cols='30'></textarea>
+      mainContent: <textarea name="mainContent" rol='6' cols='30'></textarea>
       <br>
-      description<textarea name="description" rol='6' cols='30'></textarea>
+      description: <textarea name="description" rol='6' cols='30'></textarea>
       <br>
-      author<input type="text" name="author">
+      author: <input type="text" name="author">
       <br>
-      date<input type="text" name="date">
+      date: <input type="text" name="date">
       <br>
       image<input type="text" name="imageUrl">
       <br>
       <button>submit</button>
     </form>
+    <br>
+    <p>
+      Plain text JSON area:
+    </p>
     <section id="jsonArea">
     </section>
-   <script src="vendor/jquery-2.1.4.min.js"></script>
-   <script src="scripts/resource.js"></script>
-   <script src="scripts/input.js"></script>
+   <script src="/vendor/jquery-2.1.4.min.js"></script>
+   <script src="/vendor/bootstrap.min.js"></script>
+   <script src="/scripts/resource.js"></script>
+   <script src="/scripts/input.js"></script>
   </body>
 </html>

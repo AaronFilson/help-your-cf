@@ -3,10 +3,10 @@ function getFormData(event) {
   var inputData = {
     url: $('input[name=url]').val(),
     title: $('input[name=title]').val(),
-    contentpage: $('input[name=contentpage]').val(),
+    contentPage: $('input[name=contentPage]').val(),
     category: $('input[name=category]').val(),
     subcategory: $('input[name=subcategory]').val(),
-    maincontent: $('textarea[name=maincontent]').val(),
+    mainContent: $('textarea[name=mainContent]').val(),
     description: $('textarea[name=description]').val(),
     author: $('input[name=author]').val(),
     date: $('input[name=date]').val(),
