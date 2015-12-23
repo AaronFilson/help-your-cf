@@ -1,4 +1,7 @@
 $.when(webDB.init())
-.done(webDB.setupTables())
-.done($.getJSON('/data/resource.json', webDB.insertAllRecords));
-// .always(Resource.categoryPopulate());
+.done(webDB.setupTables)
+.done(webDB.importResources)
+.done(
+  Resource.categoryPopulate,
+  Resource.categoryFilter
+);
