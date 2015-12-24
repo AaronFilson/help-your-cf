@@ -5,7 +5,7 @@ function compileTheProductivityTemplate(htmlTemplate){
 
 function appendProductivityToPage(templateFunction){
   //ask the database for all info on productivity
-  webDB.execute('SELECT * FROM resource WHERE contentPage = "productivity";', function(selectArray){
+  webDB.execute('SELECT * FROM resource WHERE contentPage LIKE "productivity";', function(selectArray){
     console.log('The selectArray variable is: ');
     console.log(selectArray.rows);
     //transform the data into what we need for the template
