@@ -1,10 +1,118 @@
 [
-  {
-    "title": "Best Practices in File Naming",
-    "contentPage": "productivity",
-    "category": "naming",
+   {
+    "title":"Best Practices in File Naming",
+    "contentPage":"productivity",
+    "category":"naming",
     "mainContent":"<ul> Best Practices in File Naming\n   <li> directory for the class: for example: 301</li>\n\n   <li> inside that directory:\n       a directory for the project: for example: vote-tracker, or code-blog </li>\n\n   <li>lower case is always easier to work with in the terminal</li>\n\n   <li>dashes (kabob-case), underscores (snake_case), camelCase -         no spacing in file names</li>\n\n   <li>keep your class notes in a separate directory from the project you are working on</li>\n\n   <li>Most importantly, do not include class notes and sample code in your repo</li>\n\n   <li>While it is possible to have similar file names, this is not something you should do</li>\n </ul></section>\n",
-    "author": "Darcy Lambrecht",
-    "date": "December 21, 2015"
+    "author":"Darcy Lambrecht",
+    "date":"December 21, 2015"
+   },
+   {
+    "url":"",
+    "title":"DevDocs",
+    "contentPage":"productivity",
+    "category":"docs",
+    "subcategory":"html",
+    "description":"",
+    "author":"Winnie the Pooh",
+    "date":"December 22,2015"
+   },
+   {
+    "url":"",
+    "title":"Keyboard Shortcuts",
+    "contentPage":"productivity",
+    "category":"keyboard shortcuts",
+    "subcategory":"speed",
+    "description":"",
+    "author":"Aaron",
+    "date":"December 22, 2015"
+   },
+   {
+    "url":"category",
+    "title":"category",
+    "contentPage":"category",
+    "category":"category",
+    "subcategory":"category",
+    "mainContent":"categorycategorycategorycategory categorycategorycategory",
+    "description":"category",
+    "author":"category",
+    "date":"category"
+  },
+  {
+    "url":"https://chrome.google.com/webstore/detail/disable-extensions-tempor/lcfdefmogcogicollfebhgjiiakbjdje;",
+    "title":"Clean up your extensions",
+    "contentPage":"Productivity",
+    "category":"Google Chrome",
+    "subcategory":"cleanup",
+    "mainContent":"This is useful if you have a lot of extensions in chrome and they are putting junk in your JS console:\nhttps://chrome.google.com/webstore/detail/disable-extensions-tempor/lcfdefmogcogicollfebhgjiiakbjdje;",
+    "description":"A helpful Chrome tip on extensions.",
+    "author":"Yueyue Qin",
+    "date":"June 5, 2014"
+  },
+  {
+    "url":"http://discover-devtools.codeschool.com/",
+    "title":"Chrome Dev Tool",
+    "contentPage":"Productivity",
+    "category":"Chrome",
+    "subcategory":"devtool",
+    "mainContent":"A nice bit of info: http://discover-devtools.codeschool.com/",
+    "description":"Dev Tool Link",
+    "author":"Aaron",
+    "date":"1-2-2013"
+  },
+  {
+    "url":"https://css-tricks.com/using-the-html5-history-api/",
+    "title":"pushState API ",
+    "contentPage":"Productivity",
+    "category":"Servers",
+    "subcategory":"pushstate-server, helpful",
+    "mainContent":"pushState API \n\nIf anyone is still trying to wrap their minds around pushState, I found this site helpful: https://css-tricks.com/using-the-html5-history-api/",
+    "description":"Tricks for understanding push state server.",
+    "author":"Robert",
+    "date":"12/15/2015"
+  },
+  {
+    "url":"http://getbootstrap.com/getting-started/#examples",
+    "title":"Bootstrap Responsive Design Example",
+    "contentPage":"Productivity",
+    "category":"Responsive Design & CSS layout",
+    "subcategory":"Starting point",
+    "mainContent":"Bootstrap Responsive Design Example: http://getbootstrap.com/getting-started/#examples\n",
+    "description":"Link to a starting example on design and CSS.",
+    "author":"Aaron",
+    "date":"December 22, 2015"
+  },
+  {
+    "url":"http://flexboxfroggy.com/",
+    "title":"Froggy game to write css",
+    "contentPage":"Productivity",
+    "category":"Responsive Design & CSS layout",
+    "subcategory":"",
+    "mainContent":"Froggy game to write css: http://flexboxfroggy.com/",
+    "description":"Super cool CSS learning game.",
+    "author":"Aaron",
+    "date":"December 22, 2015"
+  },
+  {
+    "url":"https://www.codeschool.com/courses/fundamentals-of-design",
+    "title":"Fundamental Design",
+    "contentPage":"Productivity",
+    "category":"Responsive Design & CSS layout",
+    "subcategory":"Design",
+    "mainContent":"A link to info on design: https://www.codeschool.com/courses/fundamentals-of-design\n\nSweet!",
+    "description":"Fundamental Design",
+    "author":"Aaron",
+    "date":"December 22, 2015"
+  },
+  {
+    "url":"",
+    "title":"Responsive Design",
+    "contentPage":"Productivity",
+    "category":"Responsive Design & CSS layout",
+    "subcategory":"Links",
+    "mainContent":"Responsive Design: http://learn.shayhowe.com/advanced-html-css/responsive-web-design/;\nhttp://www.anotheruiguy.com/ux-design-dev/_book/rwd/README.html;\nhttps://teamtreehouse.com/library/responsive-layouts",
+    "description":"3 links to info",
+    "author":"Yueyue Qin",
+    "date":"12, 22, 2015"
   }
 ]
