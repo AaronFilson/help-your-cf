@@ -16,12 +16,11 @@ productView.loadTemplate = function(products) {
     });
   };
 
-
-
-
-  if($('#category-filter').children().length === 1 && $('#category-filter').children().length === 1){
-    productView.populateFilter();
-  }
+  productView.populateFilter();
+  //
+  // if($('#category-filter').children().length === 1 && $('#category-filter').children().length === 1){
+  //   productView.populateFilter();
+  // }
 };
 
 productView.renderGroup = function(products) {

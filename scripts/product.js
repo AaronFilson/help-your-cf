@@ -5,7 +5,7 @@ product.allData = [];
 product.loadAll = function(callback) {
   callback = callback || function() {};
 
-  webDB.execute('SELECT * FROM resource WHERE contentPage = "productivity";'
+  webDB.execute('SELECT * FROM resource WHERE contentPage LIKE "productivity";'
   , function(data){
     //transform the data into what we need for the template
     console.log('product data');
@@ -24,7 +24,7 @@ product.findByCategory = function(category,callback) {
   webDB.execute(
     [
       {
-        'sql':'SELECT * FROM resource WHERE category = ?',
+        'sql':'SELECT * FROM resource WHERE category LIKE ?',
         'data':[category]
       }
     ],
