@@ -1,10 +1,8 @@
-page('/', indexFunction);
+page('/', homeController.index);
 
 page('/index', indexFunction);
 
 page('/about', aboutFunction);
-
-//page('/productivity', productivityFunction);
 
 page('/productivity',productController.index);
 

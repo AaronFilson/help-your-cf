@@ -1,8 +1,11 @@
 var productView = {};
 
+productView.show = function(products) {
+  productView.loadTemplate(products);
+};
+
 productView.index = function (){
   productView.loadTemplate(product.allData);
-
   productView.handleFilter();
 };
 
@@ -17,14 +20,10 @@ productView.loadTemplate = function(products) {
   };
 
   productView.populateFilter();
-  //
-  // if($('#category-filter').children().length === 1 && $('#category-filter').children().length === 1){
-  //   productView.populateFilter();
-  // }
 };
 
 productView.renderGroup = function(products) {
-  $('#content')
+  $('#product')
   .empty()
   .fadeIn()
   .append(
@@ -38,19 +37,26 @@ productView.renderGroup = function(products) {
 
 productView.populateFilter = function() {
   var val;
-  _.uniq(product.allData, function(product) {
+  var len =_.uniq(product.allData, function(product) {
     return product.category;
     console.log(resource.category);
-  }).forEach(function(resource) {
-    val = resource.category;
-    option = '<option value="' + val + '">' + val + '</option>';
-    $('#category-filter').append(option);
-  });
+  }).length;
+
+  if (len !== productView.optLen){
+    $('category-filter').empty();
+    _.uniq(product.allData, function(product) {
+      return product.category;
+      console.log(resource.category);
+    }).forEach(function(resource) {
+      val = resource.category;
+      option = '<option value="' + val + '">' + val + '</option>';
+      $('#category-filter').append(option);
+    });
+    productView.optLen = len;
+  }
+
 };
 
-productView.show = function(products) {
-  productView.loadTemplate(products);
-};
 
 productView.handleFilter = function() {
   $('#category-filter').on('change', function(event){

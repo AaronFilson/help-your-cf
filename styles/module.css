@@ -1,0 +1,42 @@
+/*nav menu*/
+.navbar-inverse {
+    background-color: #C2281E;
+    border-color: inherit;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+.navbar-inverse .navbar-brand:hover {
+    color:#9d9d9d;
+}
+.navbar-inverse .navbar-nav li a {
+    color: white;
+    font-size: 1.5rem;
+    /*#9d9d9d;*/
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+  color:#9d9d9d;
+}
+
+/*front image*/
+.jumbotron {
+  background-image:url('/images/homepage2.jpg');
+  background-size: cover;
+  height: 600px;
+  margin-top: 0px;
+}
+
+.jumbotron .container {
+  position: relative;
+  top: 100px;
+}
+
+.jumbotron h1 {
+  color: white;
+}
+
+.jumbotron h2 {
+  color: white;
+}
