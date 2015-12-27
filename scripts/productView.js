@@ -23,6 +23,8 @@ productView.loadTemplate = function(products) {
 };
 
 productView.renderGroup = function(products) {
+  $('#category-filter').fadeIn();
+  $('#projectNav').hide();
   $('#product')
   .empty()
   .fadeIn()
@@ -33,6 +35,16 @@ productView.renderGroup = function(products) {
   )
   .siblings()
   .hide();
+  if($('#productNav').css('display') === 'none' || $('#productNav').length === 0){
+    productView.renderNavCrumb();
+  }
+};
+
+productView.renderNavCrumb = function() {
+  var ele ="<ol class='breadcrumb' id='productNav'><li><a href='/'>Home</a></li><li><a href='/productivity'>Productivity</a></li></ol>";
+
+  $('#category-filter').before(ele);
+
 };
 
 productView.populateFilter = function() {
