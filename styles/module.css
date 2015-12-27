@@ -1,0 +1,95 @@
+/*nav menu*/
+.navbar-inverse {
+    background-color: #C2281E;
+    border-color: inherit;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+.navbar-inverse .navbar-brand:hover {
+    color:#9d9d9d;
+}
+.navbar-inverse .navbar-nav li a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+  color:#9d9d9d;
+}
+
+/*front image*/
+.jumbotron {
+  background-image:url('/images/homepage2.jpg');
+  background-size: cover;
+  height: 600px;
+  margin-top: 0px;
+}
+
+.jumbotron .container {
+  position: relative;
+  top: 100px;
+}
+
+.jumbotron h1 {
+  color: white;
+}
+
+.jumbotron h2 {
+  color: white;
+}
+
+/*about us*/
+
+#aboutUs {
+  width:90%;
+  margin: 3rem auto;
+}
+
+#aboutUs .row .col-sm-6 {
+  padding: 2rem;
+}
+
+#aboutUs .row .col-md-4 {
+  padding: 2rem;
+}
+
+/*Productivity*/
+select {
+  display: block;
+  margin: 2% auto;
+  font-size: 1.5em;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+  line-height: 1;
+  border-radius: 2px;
+  width:20%;
+}
+
+#procut{
+  margin:2rem;
+  padding:2rem;
+}
+
+div.panel-default {
+  width:90%;
+  margin: 3rem auto;
+}
+
+#productNav {
+  width:90%;
+  color:black;
+}
+
+/*projects*/
+
+#projContainer {
+  width:90%;
+  margin:5rem auto;
+}
+
+#projectNav{
+  width:90%;
+}

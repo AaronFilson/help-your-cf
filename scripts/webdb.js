@@ -23,6 +23,7 @@ webDB.init = function() {
     if (openDatabase) {
       webDB.verbose(true);
       webDB.connect('resourceDB', 'Resource Database', 5*1024*1024);
+      webDB.setupTables();
     } else {
       console.log('Web Databases not supported.');
     }
@@ -35,8 +36,9 @@ webDB.connect = function (database, title, size) {
   html5sql.openDatabase(database, title, size);
 };
 
-webDB.importResources = function (path) {
+webDB.importResources = function (data) {
   // Import articles from JSON file
+  console.log(data);
   $.ajax({
     type:'HEAD',
     url:'/data/resource.json',
@@ -63,15 +65,6 @@ webDB.fetchJSON = function() {
   $.getJSON('data/resource.json', webDB.insertRecord);
 };
 
-// webDB.insertAllRecords = function(resourceArg) {
-//   webDB.execute('SELECT * FROM resource;', function(results) {
-//     if(results.rows.length <= 0) {
-//       resourceArg.forEach(webDB.insertRecord);
-//     }
-//   });
-//
-// };
-
 webDB.insertRecord = function(data) {
   // insert article record into database
   console.log(data);
@@ -92,12 +85,9 @@ webDB.insertRecord = function(data) {
 };
 
 webDB.setupTables = function () {
-  html5sql.process(
+  webDB.execute(
     'CREATE TABLE IF NOT EXISTS resource (id int PRIMARY KEY, url text, title text, contentPage text, category text, subcategory text, mainContent text, description text, author text, date text);',
-    function() {
-      // on success
-      console.log('Success setting up tables.');
-    }
+    webDB.importResources
   );
 };
 
@@ -110,3 +100,5 @@ webDB.execute = function (sql, callback) {
     }
   );
 };
+
+webDB.init();

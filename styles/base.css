@@ -1,0 +1,8 @@
+.breadcrumb {
+  margin:5rem auto;
+}
+.breadcrumb a{
+  color:black;
+  font-size: 16px;
+  font-weight: 500;
+}
