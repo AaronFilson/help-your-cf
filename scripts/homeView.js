@@ -7,6 +7,6 @@ homeView.index = function() {
 
 homeView.ui = function() {
   $('#category-filter').hide();
-  $('.breadcrumb').hide();
   $('#home').siblings().hide();
+  $('.breadcrumbNav').hide();
 };
