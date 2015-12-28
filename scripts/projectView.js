@@ -44,6 +44,7 @@ projectView.nav = function() {
 
 projectView.ui = function() {
   $('#category-filter').hide();
+  $('.breadcrumbNav').fadeIn();
   $('#projects')
   .siblings()
   .hide();
