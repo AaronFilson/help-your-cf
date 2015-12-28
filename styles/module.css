@@ -39,6 +39,12 @@
 .jumbotron h4 {
   color: white;
 }
+
+.jumbotron p {
+ color: white;
+ text-shadow: black -.05em .05em;
+}
+
 /*about us*/
 
 #aboutUs {
@@ -99,8 +105,8 @@ div.panel-default {
   width:80%;
 }
 
-.companyContainer {
-  width: 90%;
+.container {
+  width: 100%;
 }
 img.companyImg {
   margin:2rem auto;

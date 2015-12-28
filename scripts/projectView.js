@@ -37,31 +37,15 @@ projectView.renderGroup = function(projects) {
 };
 
 projectView.nav = function() {
+  $('#page').find('a').attr('href','/projects');
+  $('#page').find('a').text('Projects');
 
-  if($('.projectNav').length >= 2) {
-    $('.projectNav').hide().filter(':lt(1)').fadeIn();
-  }
-
-  if($('.projectNav').css('display') === 'none' && $('.projectNav').fadeIn().length ===1){
-    projectView.renderNavCrumb();
-  }
-  if($('.projectNav').length === 0){
-    projectView.renderNavCrumb();
-  }
 };
 
 projectView.ui = function() {
   $('#category-filter').hide();
-  $('.productNav').hide();
   $('#projects')
   .siblings()
   .hide();
   console.log('projectView.ui()');
-};
-
-projectView.renderNavCrumb = function() {
-  var ele ="<ol class='breadcrumb projectNav'><li><a href='/'>Home</a></li><li><a href='/projects'>Projects</a></li></ol>";
-  if($('.productNav').length <= 1){
-    $('#category-filter').before(ele);
-  }
 };
