@@ -78,7 +78,7 @@ div.panel-default {
   margin: 3rem auto;
 }
 
-#productNav {
+.productNav {
   width:90%;
   color:black;
 }
@@ -90,7 +90,7 @@ div.panel-default {
   margin:5rem auto;
 }
 
-#projectNav{
+.projectNav{
   width:90%;
 }
 
@@ -109,4 +109,12 @@ img.companyImg {
 .companyContainer a {
   color:#C2281E;
   font-size: 2rem;
+}
+
+.companyContainer a:hover {
+  color:#9d9d9d;
+  text-decoration:none;
+}
+.companyContainer a:active {
+  color:#9d9d9d;
 }

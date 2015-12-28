@@ -7,7 +7,7 @@ companyView.index = function() {
 
 companyView.ui = function() {
   $('#category-filter').hide();
-  $('#productNav').hide();
-  $('#projectNav').hide();
+  $('.productNav').hide();
+  $('.projectNav').hide();
   $('#companies').siblings().hide();
 };
