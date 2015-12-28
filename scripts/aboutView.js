@@ -7,7 +7,7 @@ aboutView.index = function() {
 
 aboutView.ui = function() {
   $('#category-filter').hide();
-  $('#productNav').hide();
-  $('#projectNav').hide();
+  $('.productNav').hide();
+  $('.projectNav').hide();
   $('#aboutUs').siblings().hide();
 };
