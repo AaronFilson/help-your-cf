@@ -1,18 +1,17 @@
-page('/', indexFunction);
+page('/', homeController.index);
 
-page('/index', indexFunction);
-
-page('/about', aboutFunction);
-
-//page('/productivity', productivityFunction);
+page('/about', aboutController.index);
 
 page('/productivity',productController.index);
+
+page('/companies',companyController.index);
+
+page('/projects', projectController.index);
 
 page('/productivity/:category',
      productController.category,
      productController.show
 );
 
-page('/*', indexFunction);
 
 page.start();
