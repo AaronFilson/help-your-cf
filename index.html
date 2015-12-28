@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab|Lato' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.3/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="/vendor/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/module.css">
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <title>Help Your Code Fellows</title>
   </head>
   <body>
@@ -22,14 +26,13 @@
               </div>
              <div id="navbar" class="collapse navbar-collapse">
                <ul class="nav navbar-nav">
-                 <li><a href="/" class="icon-home"> Home</a></li>
-                 <li><a href="/about" class="icon-address-book"> About</a></li>
-                 <li><a href="/productivity" class="icon-address-book"> Productivity</a></li>
-
-                 <li><a href="https://twitter.com/CodeFellows" target="_blank" class="icon-twitter3"> Twitter</a></li>
-                 <li><a href="http://github.com/codefellows" target="_blank" class="icon-github"> GitHub</a></li>
+                 <li><a href="/"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;Home</a></li>
+                 <li><a href="/about"><i class="fa fa-user fa-lg"></i>&nbsp;&nbsp;&nbsp;About</a></li>
+                 <li><a href="/productivity"><i class="fa fa-file-code-o fa-lg"></i>&nbsp;&nbsp;&nbsp;Productivity</a></li>
+                 <li><a href="/companies"><i class="fa fa-building-o fa-lg"></i>&nbsp;&nbsp;&nbsp;Companies</a></li>
+                 <li><a href="/projects"><i class="fa fa-files-o fa-lg"></i>&nbsp;&nbsp;&nbsp;Projects</a></li>
                </ul>
-             </div><!--/.nav-collapse -->
+             </div>
          </div>
        </nav>
      </header>
@@ -44,23 +47,56 @@
     </div>
 
     <select id="category-filter">
-      <option value="" class="default">---Category Filter---</option>
+      <option value="" class="default">Category Filter</option>
     </select>
 
-    <main>
-      <section id="home"></section>
-      <img src="https://pbs.twimg.com/media/CSB5VGpUYAA6TCS.jpg">
-      <img src="https://pbs.twimg.com/media/CNhp4M0UcAEGboS.jpg">
-      <section id="content">
-        <select id="category-filter" class="filter">Category Filter</select>
+    <main id="content">
+      <section id="home">
+
+      </section>
+
+      <section id="aboutUs">
+
+      </section>
+
+      <section id="product">
+
+      </section>
+
+      <section id="companies">
+
+
+      </section>
+
+      <section id="projects">
+        <div id="projContainer">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 class="page-header">Codefellows Code 201
+                  <small>final projects</small>
+              </h1>
+            </div>
+          </div>
+
+        </div>
+
       </section>
     </main>
+    <hr>
+    <footer class="footer">
+      <div class="container">
+        Follow codefellows:
+        <a href="https://twitter.com/CodeFellows" target="_blank"><i class="fa fa-twitter fa-lg"></i></a> &nbsp; &nbsp;
+        <a href="https://www.facebook.com/codefellows.orgs" target="_blank"><i class="fa fa-facebook fa-lg"></i></a> &nbsp; &nbsp;
+        <a href="https://plus.google.com/103772085826317170119/posts" target="_blank"><i class="fa fa-google-plus fa-lg"></i></a>
+      </div>
+   </footer>
 
-    <div>
       <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.js"></script>
       <script src="/vendor/jquery-2.1.4.min.js"></script>
       <script src="/vendor/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.3/js/bootstrap-select.min.js"></script>
       <script src="/vendor/handlebars-v4.0.5.js"></script>
       <script src="/data/resource.json"></script>
       <script src="/vendor/html5sql.js"></script>
@@ -70,18 +106,28 @@
 
       <script src="/scripts/resourceController.js"></script>
       <script src="/scripts/resourceView.js"></script>
-    </div>
 
     <!-- Model: -->
    <script src="/scripts/product.js"></script>
+   <script src="/scripts/project.js"></script>
 
 
    <!-- View: -->
+   <script src="/scripts/homeView.js"></script>
+   <script src="/scripts/aboutView.js"></script>
    <script src="/scripts/productView.js"></script>
+   <script src="/scripts/companyView.js"></script>
+   <script src="/scripts/projectView.js"></script>
+
 
 
    <!-- Controller: -->
+   <script src="/scripts/homeController.js"></script>
+   <script src="/scripts/aboutController.js"></script>
    <script src="/scripts/productController.js"></script>
+   <script src="/scripts/companyController.js"></script>
+   <script src="/scripts/projectController.js"></script>
+
 
 
    <!-- Router: -->
