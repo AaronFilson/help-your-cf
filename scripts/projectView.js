@@ -48,4 +48,5 @@ projectView.ui = function() {
   .siblings()
   .hide();
   console.log('projectView.ui()');
+  $('.jumbotron').slideUp();
 };
