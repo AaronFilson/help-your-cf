@@ -19,6 +19,11 @@
   color:#9d9d9d;
 }
 
+.nav-padding-on-top {
+  padding-bottom: 15px;
+  margin: 5px;
+}
+
 /*front image*/
 .jumbotron {
   background-image:url('/images/homepage2.jpg');
