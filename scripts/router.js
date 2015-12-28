@@ -4,10 +4,9 @@ page('/about', aboutController.index);
 
 page('/productivity',productController.index);
 
+page('/companies',companyController.index);
+
 page('/projects', projectController.index);
-
-//page('/projects/:category',function(ctx){console.log(ctx.params);});
-
 
 page('/productivity/:category',
      productController.category,

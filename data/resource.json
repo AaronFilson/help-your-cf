@@ -2,7 +2,7 @@
    {
     "title":"Best Practices in File Naming",
     "contentPage":"productivity",
-    "category":"naming",
+    "category":"File naming",
     "mainContent":"<ul> Best Practices in File Naming\n   <li> directory for the class: for example: 301</li>\n\n   <li> inside that directory:\n       a directory for the project: for example: vote-tracker, or code-blog </li>\n\n   <li>lower case is always easier to work with in the terminal</li>\n\n   <li>dashes (kabob-case), underscores (snake_case), camelCase -         no spacing in file names</li>\n\n   <li>keep your class notes in a separate directory from the project you are working on</li>\n\n   <li>Most importantly, do not include class notes and sample code in your repo</li>\n\n   <li>While it is possible to have similar file names, this is not something you should do</li>\n </ul></section>\n",
     "author":"Darcy Lambrecht",
     "date":"December 21, 2015"
@@ -16,6 +16,28 @@
     "description":"",
     "author":"Winnie the Pooh",
     "date":"December 22,2015"
+   },
+   {
+    "url":"http://scottjschmidt.com/git-workflow.html",
+    "title":"Git Commands Daily/Routine Workflow",
+    "contentPage":"productivity",
+    "category":"Git",
+    "subcategory":"html",
+    "mainContent":"The artile introduces frequently used git commands collection",
+    "description":"",
+    "author":"Winnie the Pooh",
+    "date":"December 22,2015"
+   },
+   {
+    "url":"https://atom.io/packages/merge-conflicts",
+    "title":"Git Merge Conflicts",
+    "contentPage":"productivity",
+    "category":"Git",
+    "subcategory":"",
+    "mainContent":"Atom package resolves your merge conflicts easily",
+    "description":"",
+    "author":"",
+    "date":""
    },
    {
     "url":"",

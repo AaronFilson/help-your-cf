@@ -93,3 +93,20 @@ div.panel-default {
 #projectNav{
   width:90%;
 }
+
+/*Companies*/
+
+#companyNav{
+  width:80%;
+}
+
+.companyContainer {
+  width: 90%;
+}
+img.companyImg {
+  margin:2rem auto;
+}
+.companyContainer a {
+  color:#C2281E;
+  font-size: 2rem;
+}
