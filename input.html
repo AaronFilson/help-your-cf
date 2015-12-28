@@ -8,27 +8,48 @@
     <title>Input Page</title>
   </head>
   <body>
+    <h1>Input Your Own Resources</h1>
     <form>
-      URL: <input type="text" name="url">
-      <br>
-      title: <input type="text" name="title">
-      <br>
-      contentPage: <input type="text" name="contentPage">
-      <br>
-      category: <input type="text" name="category">
-      <br>
-      subcategory: <input type="text" name="subcategory">
-      <br>
-      mainContent: <textarea name="mainContent" rol='6' cols='30'></textarea>
-      <br>
-      description: <textarea name="description" rol='6' cols='30'></textarea>
-      <br>
-      author: <input type="text" name="author">
-      <br>
-      date: <input type="text" name="date">
-      <br>
-      image<input type="text" name="imageUrl">
-      <br>
+      <fieldset class="form-group">
+        <label for="url">URL</label>
+        <input type="text" class="form-control" id="url" name="url">
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title" name="title">
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="contentPage">contentPage</label>
+        <input type="text" class="form-control" id="contentPage" name="contentPage">
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="category">Category</label>
+        <input type="text" class="form-control" id="category" name="category">
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="subcategory">Subcategory</label>
+        <input type="text" class="form-control" id="subcategory" name="subcategory">
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="mainContent">mainContent</label>
+        <textarea name="mainContent" class="form-control" id="mainContent"></textarea>
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="description">Description</label>
+        <textarea name="description" class="form-control" id="description"></textarea>
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="author">Author</label>
+        <input type="text" class="form-control" id="author" name="author">
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="date">Date</label>
+        <input type="text" class="form-control" id="date" name="date">
+      </fieldset>
+      <fieldset class="form-group">
+        <label for"image">Image</label>
+        <input type="text" class="form-control" id="image" name="imageUrl">
+      </fieldset>
       <button>submit</button>
     </form>
     <br>
