@@ -47,6 +47,7 @@ productView.nav = function() {
   if($('.productNav').length === 0){
     productView.renderNavCrumb();
   }
+  $('.jumbotron').slideUp();
 };
 
 productView.renderNavCrumb = function() {

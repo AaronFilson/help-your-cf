@@ -362,6 +362,18 @@
   },
 
   {
+    "url":"https://regex101.com/",
+    "title":"Regular Expression 101",
+    "contentPage":"productivity",
+    "category":"regular expression",
+    "subcategory":"",
+    "mainContent":"Test your regular expressions here with this handy tester!",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
     "url":"https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction",
     "title":"Heroku",
     "contentPage":"productivity",
@@ -408,6 +420,151 @@
     "author":"",
     "date":"December 28, 2015"
   },
+
+  {
+    "url":"https://highlightjs.org/download/",
+    "title":"Highlight JS",
+    "contentPage":"productivity",
+    "category":"design",
+    "subcategory":"",
+    "mainContent":"This library helps you add syntax highlighting.",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"http://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF",
+    "title":"Paletton",
+    "contentPage":"productivity",
+    "category":"design",
+    "subcategory":"",
+    "mainContent":"Paletton is a handy tool to help you choose color schemes",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"http://www.chartjs.org/docs/#doughnut-pie-chart-introduction",
+    "title":"Chart JS",
+    "contentPage":"productivity",
+    "category":"docs",
+    "subcategory":"",
+    "mainContent":"Chart JS is a library to add charts and graphs to your site.",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"http://es6-features.org/",
+    "title":"EcmaScript 6",
+    "contentPage":"productivity",
+    "category":"JavaScript",
+    "subcategory":"",
+    "mainContent":"New features in EcmaScript 6",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"https://www.firebase.com/",
+    "title":"Firebase",
+    "contentPage":"productivity",
+    "category":"deployment",
+    "subcategory":"",
+    "mainContent":"Firebase is a great tool for database and deployment",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"http://mashable.com/2013/07/11/lorem-ipsum/#U5On22.k.qqV",
+    "title":"Lorem Ipsum Generator",
+    "contentPage":"productivity",
+    "category":"resources",
+    "subcategory":"",
+    "mainContent":"Use this lorem ipsum generator when you need to add dummy text to your site.",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"http://caniuse.com/",
+    "title":"Can I Use",
+    "contentPage":"productivity",
+    "category":"html and css",
+    "subcategory":"",
+    "mainContent":"When you're not sure if there is browser compatibility for what you want to do, check out this helpful link",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"http://career.guru99.com/top-85-javascript-interview-questions/",
+    "title":"JavaScript Interview Questions",
+    "contentPage":"productivity",
+    "category":"interview prep",
+    "subcategory":"",
+    "mainContent":"Here are some interview questions to prep you for your JavaScript interview!",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"http://www.codeproject.com/Articles/620811/Latest-JavaScript-Interview-Questions-and-Answers",
+    "title":"JavaScript Interview Questions 2",
+    "contentPage":"productivity",
+    "category":"interview prep",
+    "subcategory":"",
+    "mainContent":"Here are some more questions to prepare you for your interview!",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"http://www.thatjsdude.com/interview/js2.html#nullVsUndefined",
+    "title":"JavaScript Questions",
+    "contentPage":"productivity",
+    "category":"interview prep",
+    "subcategory":"",
+    "mainContent":"Some basic Javascript questions to prep your for your interview!",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"https://github.com/h5bp/Front-end-Developer-Interview-Questions",
+    "title":"Front End Developer Interview Questions",
+    "contentPage":"productivity",
+    "category":"interview prep",
+    "subcategory":"",
+    "mainContent":"Some interview questions for the front end developer.",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"https://www.reddit.com/r/javascript/comments/3rb88w/ten_questions_ive_been_asked_most_more_than_once/",
+    "title":"Interview Questions",
+    "contentPage":"productivity",
+    "category":"interview prep",
+    "subcategory":"",
+    "mainContent":"More interview prep questions",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
   {
     "url":"https://github.com/Trivia-Crossroads/triviacrossroads",
     "title":"Trivia Crossroads",
