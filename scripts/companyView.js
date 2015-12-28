@@ -9,6 +9,7 @@ companyView.index = function() {
 companyView.ui = function() {
   $('#category-filter').hide();
   $('#companies').siblings().hide();
+  $('.jumbotron').slideUp();
 };
 
 companyView.nav = function() {
