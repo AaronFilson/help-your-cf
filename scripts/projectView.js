@@ -1,18 +1,14 @@
 var projectView = {};
 
 projectView.index = function() {
-  console.log('projectView.index()');
   projectView.loadTemplate(project.allData);
 };
 
 projectView.loadTemplate = function(projects) {
-  console.log(projects);
   if(projectView.template){
-    console.log('have template');
     projectView.ui();
     projectView.renderGroup(projects);
   }else{
-    console.log('no template');
     $.get('/templates/projectTemplate.html',function(data, msg, xhr) {
       projectView.ui();
       projectView.template = Handlebars.compile(data);
@@ -22,7 +18,6 @@ projectView.loadTemplate = function(projects) {
 };
 
 projectView.renderGroup = function(projects) {
-  console.log('projectView.renderGroup()');
   projectView.nav();
   $('#projects').fadeIn();
   $('#projContainer')
@@ -48,6 +43,5 @@ projectView.ui = function() {
   $('#projects')
   .siblings()
   .hide();
-  console.log('projectView.ui()');
   $('.jumbotron').slideUp();
 };
