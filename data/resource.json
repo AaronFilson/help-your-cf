@@ -8,14 +8,15 @@
     "date":"December 21, 2015"
    },
    {
-    "url":"",
+    "url":"http://devdocs.io",
     "title":"DevDocs",
     "contentPage":"productivity",
     "category":"docs",
     "subcategory":"html",
+    "mainContent": "DevDocs is an API documentation browser that combines 60+ docs in a single UI with offline mode, instant search, keyboard shortcuts, and more.",
     "description":"",
-    "author":"Winnie the Pooh",
-    "date":"December 22,2015"
+    "author":"",
+    "date":"December 28, 2015"
    },
    {
     "url":"http://scottjschmidt.com/git-workflow.html",
@@ -23,10 +24,10 @@
     "contentPage":"productivity",
     "category":"Git",
     "subcategory":"html",
-    "mainContent":"The artile introduces frequently used git commands collection",
+    "mainContent":"The article introduces frequently used git commands collection",
     "description":"",
-    "author":"Winnie the Pooh",
-    "date":"December 22,2015"
+    "author":"Scott Schmidt",
+    "date":"December 28, 2015"
    },
    {
     "url":"https://atom.io/packages/merge-conflicts",
@@ -37,80 +38,134 @@
     "mainContent":"Atom package resolves your merge conflicts easily",
     "description":"",
     "author":"",
-    "date":""
+    "date":"December 28, 2015"
    },
+
    {
-    "url":"",
-    "title":"Keyboard Shortcuts",
+    "url":"https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging",
+    "title":"Git Branching and Merging",
     "contentPage":"productivity",
-    "category":"keyboard shortcuts",
-    "subcategory":"speed",
+    "category":"Git",
+    "subcategory":"",
+    "mainContent":"A good resource for learning git branching and merging.",
     "description":"",
-    "author":"Aaron",
-    "date":"December 22, 2015"
-   },
-   {
-    "url":"category",
-    "title":"category",
-    "contentPage":"category",
-    "category":"category",
-    "subcategory":"category",
-    "mainContent":"categorycategorycategorycategory categorycategorycategory",
-    "description":"category",
-    "author":"category",
-    "date":"category"
+    "author":"",
+    "date":"December 28, 2015"
   },
+
+  {
+    "url":"https://www.atlassian.com/git/tutorials/",
+    "title":"Git Tutorial",
+    "contentPage":"productivity",
+    "category":"Git",
+    "subcategory":"tutorial",
+    "mainContent":"A great tutorial for learning Git.",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"http://www.w3schools.com/sql/sql_quickref.asp;",
+    "title":"SQL Keywords Reference Table",
+    "contentPage":"productivity",
+    "category":"SQL",
+    "subcategory":"",
+    "mainContent":"A handy reference table for SQL keywords and syntax.",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+
+
+  {
+    "url":"http://www.1keydata.com/sql/result.html?cx=014264424332737199420%3Aiwyymgqyuqa&q=create&sa=Search+This+Site&cof=FORID%3A10&siteurl=www.1keydata.com%2Fsql%2Fsql-commands.html&ref=www.google.com%2F&ss=1400j1010148j6; https://leanpub.com/aprimeronsql/read",
+    "title":"Intro to SQL",
+    "contentPage":"productivity",
+    "category":"SQL",
+    "subcategory":"",
+    "mainContent":"An introduction to SQL",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"http://sqlbolt.com/",
+    "title":"SQL Practice",
+    "contentPage":"productivity",
+    "category":"SQL",
+    "subcategory":"tutorial",
+    "mainContent":"Get some more practice with SQL with this helpful site!",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":" http://sqlzoo.net/",
+    "title":"SQL Tutorial",
+    "contentPage":"productivity",
+    "category":"SQL",
+    "subcategory":"tutorial",
+    "mainContent":"Here is another SQL tutorial",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
   {
     "url":"https://chrome.google.com/webstore/detail/disable-extensions-tempor/lcfdefmogcogicollfebhgjiiakbjdje;",
     "title":"Clean up your extensions",
-    "contentPage":"Productivity",
-    "category":"Google Chrome",
+    "contentPage":"productivity",
+    "category":"Chrome",
     "subcategory":"cleanup",
-    "mainContent":"This is useful if you have a lot of extensions in chrome and they are putting junk in your JS console:\nhttps://chrome.google.com/webstore/detail/disable-extensions-tempor/lcfdefmogcogicollfebhgjiiakbjdje;",
-    "description":"A helpful Chrome tip on extensions.",
+    "mainContent":"This is useful if you have a lot of extensions in chrome and they are putting junk in your JS console.",
+    "description":"A tip on Chrome extensions.",
     "author":"Yueyue Qin",
     "date":"June 5, 2014"
   },
   {
     "url":"http://discover-devtools.codeschool.com/",
     "title":"Chrome Dev Tool",
-    "contentPage":"Productivity",
+    "contentPage":"productivity",
     "category":"Chrome",
     "subcategory":"devtool",
-    "mainContent":"A nice bit of info: http://discover-devtools.codeschool.com/",
+    "mainContent":"A course to explore and master Chrome DevTools",
     "description":"Dev Tool Link",
     "author":"Aaron",
-    "date":"1-2-2013"
+    "date":"December 28, 2015"
   },
   {
     "url":"https://css-tricks.com/using-the-html5-history-api/",
     "title":"pushState API ",
-    "contentPage":"Productivity",
+    "contentPage":"productivity",
     "category":"Servers",
     "subcategory":"pushstate-server, helpful",
-    "mainContent":"pushState API \n\nIf anyone is still trying to wrap their minds around pushState, I found this site helpful: https://css-tricks.com/using-the-html5-history-api/",
+    "mainContent":"pushState API \n\nIf anyone is still trying to wrap their minds around pushState, I found this site helpful.",
     "description":"Tricks for understanding push state server.",
-    "author":"Robert",
-    "date":"12/15/2015"
+    "author":"",
+    "date":"December 28, 2015"
   },
   {
     "url":"http://getbootstrap.com/getting-started/#examples",
-    "title":"Bootstrap Responsive Design Example",
-    "contentPage":"Productivity",
+    "title":"Bootstrap Responsive Design",
+    "contentPage":"productivity",
     "category":"Responsive Design & CSS layout",
     "subcategory":"Starting point",
-    "mainContent":"Bootstrap Responsive Design Example: http://getbootstrap.com/getting-started/#examples\n",
+    "mainContent":"Bootstrap Responsive Design Example",
     "description":"Link to a starting example on design and CSS.",
     "author":"Aaron",
     "date":"December 22, 2015"
   },
   {
     "url":"http://flexboxfroggy.com/",
-    "title":"Froggy game to write css",
-    "contentPage":"Productivity",
+    "title":"Flexbox Froggy",
+    "contentPage":"productivity",
     "category":"Responsive Design & CSS layout",
-    "subcategory":"",
-    "mainContent":"Froggy game to write css: http://flexboxfroggy.com/",
+    "subcategory":"tutorial",
+    "mainContent":"Froggy game to write css",
     "description":"Super cool CSS learning game.",
     "author":"Aaron",
     "date":"December 22, 2015"
@@ -118,24 +173,240 @@
   {
     "url":"https://www.codeschool.com/courses/fundamentals-of-design",
     "title":"Fundamental Design",
-    "contentPage":"Productivity",
+    "contentPage":"productivity",
     "category":"Responsive Design & CSS layout",
     "subcategory":"Design",
-    "mainContent":"A link to info on design: https://www.codeschool.com/courses/fundamentals-of-design\n\nSweet!",
+    "mainContent":"A link to info on design. Sweet!",
     "description":"Fundamental Design",
     "author":"Aaron",
     "date":"December 22, 2015"
   },
   {
-    "url":"",
+    "url":"http://learn.shayhowe.com/advanced-html-css/responsive-web-design/",
     "title":"Responsive Design",
-    "contentPage":"Productivity",
+    "contentPage":"productivity",
     "category":"Responsive Design & CSS layout",
     "subcategory":"Links",
-    "mainContent":"Responsive Design: http://learn.shayhowe.com/advanced-html-css/responsive-web-design/;\nhttp://www.anotheruiguy.com/ux-design-dev/_book/rwd/README.html;\nhttps://teamtreehouse.com/library/responsive-layouts",
+    "mainContent":" Learn Responsive Design",
     "description":"3 links to info",
     "author":"Yueyue Qin",
-    "date":"12, 22, 2015"
+    "date":"December 22, 2015"
+  },
+
+  {
+    "url":"http://www.anotheruiguy.com/ux-design-dev/_book/rwd/README.html",
+    "title":"Responsive Design",
+    "contentPage":"productivity",
+    "category":"Responsive Design & CSS layout",
+    "subcategory":"Links",
+    "mainContent":"Another link to learn Responsive Design",
+    "description":"3 links to info",
+    "author":"Yueyue Qin",
+    "date":"December 22, 2015"
+  },
+
+  {
+    "url":"https://teamtreehouse.com/library/responsive-layouts",
+    "title":"Responsive Design",
+    "contentPage":"productivity",
+    "category":"Responsive Design & CSS layout",
+    "subcategory":"Links",
+    "mainContent":"Treehouse link to Responsive Design",
+    "description":"3 links to info",
+    "author":"Yueyue Qin",
+    "date":"December 22, 2015"
+  },
+
+  {
+    "url":"https://teamtreehouse.com/library/javascript-loops-arrays-and-objects",
+    "title":"JavaScript Loops and Arrays",
+    "contentPage":"productivity",
+    "category":"JavaScript",
+    "subcategory":"tutorial",
+    "mainContent":"A course to learn loops and arrays in JavaScript.",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"https://www.codecademy.com/learn/jquery",
+    "title":"jQuery Library",
+    "contentPage":"productivity",
+    "category":"jQuery",
+    "subcategory":"tutorial",
+    "mainContent":"Tutorial on learning jQuery.",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"https://oscarotero.com/jquery/",
+    "title":"jQuery Cheatsheet",
+    "contentPage":"productivity",
+    "category":"jQuery",
+    "subcategory":"JavaScript",
+    "mainContent":"Helpful jQuery Cheatsheet.",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"http://handlebarsjs.com/",
+    "title":"Handlebars JS",
+    "contentPage":"productivity",
+    "category":"docs",
+    "subcategory":"JavaScript",
+    "mainContent":"This is the link to the Handlebars JS library that is used in Code 301. It is used to build a semantic template",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"http://tutorialzine.com/2015/01/learn-handlebars-in-10-minutes/",
+    "title":"Handlebars JS Tutorial ",
+    "contentPage":"productivity",
+    "category":"JavaScript",
+    "subcategory":"",
+    "mainContent":"This is a tutorial on how to use Handlebars JS.",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"https://teamtreehouse.com/library/ajax-basics/jquery-and-ajax/introducing-jquery",
+    "title":"AJAX",
+    "contentPage":"productivity",
+    "category":"AJAX",
+    "subcategory":"",
+    "mainContent":"Treehouse tutorial to learn AJAX.",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"http://eloquentjavascript.net/05_higher_order.html",
+    "title":"Functional Programming",
+    "contentPage":"productivity",
+    "category":"JavaScript",
+    "subcategory":"",
+    "mainContent":"A resource for functional programming.",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"https://github.com/visionmedia/page.js",
+    "title":"Page JS",
+    "contentPage":"productivity",
+    "category":"docs",
+    "subcategory":"JavaScript",
+    "mainContent":"This is the link to Page JS which you will use in Code 301.",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"http://eloquentjavascript.net/",
+    "title":"Eloquent JavaScript",
+    "contentPage":"productivity",
+    "category":"JavaScript",
+    "subcategory":"",
+    "mainContent":"An online JavaScript textbook.",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"https://github.com/getify/You-Dont-Know-JS/blob/master/this%20&%20object%20prototypes/README.md#you-dont-know-js-this--object-prototypes",
+    "title":"You Don't Know JS",
+    "contentPage":"productivity",
+    "category":"JavaScript",
+    "subcategory":"",
+    "mainContent":"Another great online JavaScript textbook.",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"https://www.codeschool.com/courses/breaking-the-ice-with-regular-expressions",
+    "title":"Regular Expressions",
+    "contentPage":"productivity",
+    "category":"regular expression",
+    "subcategory":"",
+    "mainContent":"\"It's a language of pattern matching and magic.\" ~ Aaron",
+    "description":"",
+    "author":"Aaron",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"http://blog.codinghorror.com/understanding-model-view-controller/",
+    "title":"Model View Controller",
+    "contentPage":"productivity",
+    "category":"MVC",
+    "subcategory":"",
+    "mainContent":"Reading for Model View Controller.",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction",
+    "title":"Heroku",
+    "contentPage":"productivity",
+    "category":"deployment",
+    "subcategory":"",
+    "mainContent":"Heroku deployment tutorial.",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"https://developer.mozilla.org/en-US/",
+    "title":"Mozilla Developer Network",
+    "contentPage":"productivity",
+    "category":"docs",
+    "subcategory":"",
+    "mainContent":" The Mozilla Developer Network (MDN) provides information about Open Web technologies including HTML, CSS, and APIs for both Web sites and HTML5 Apps. It also documents Mozilla products, like Firefox OS.",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"https://support.google.com/chromebook/answer/183101?hl=en",
+    "title":"Keyboard Shortcuts",
+    "contentPage":"productivity",
+    "category":"Chrome",
+    "subcategory":"shortcuts",
+    "mainContent":"A list of keyboard shortcuts to use in Chrome.",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
+  },
+
+  {
+    "url":"http://www.smashingmagazine.com/2010/10/local-storage-and-how-to-use-it/",
+    "title":"Local Storage",
+    "contentPage":"productivity",
+    "category":"docs",
+    "subcategory":"",
+    "mainContent":"A resource for understanding and using local storage.",
+    "description":"",
+    "author":"",
+    "date":"December 28, 2015"
   },
 
   {
