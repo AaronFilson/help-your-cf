@@ -12,6 +12,7 @@ aboutView.ui = function() {
   $('.breadcrumbNav').fadeIn();
   $('.breadcrumb').fadeIn();
   $('#aboutUs').siblings().hide();
+  $('.jumbotron').slideUp();
 };
 
 aboutView.nav = function() {
