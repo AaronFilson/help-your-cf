@@ -40,6 +40,22 @@ productView.renderGroup = function(products) {
 };
 
 productView.nav = function() {
+
+  if($('.productNav').css('display') === 'none' && $('.productNav').show().length ===1 ){
+    productView.renderNavCrumb();
+  }
+  if($('.productNav').length === 0){
+    productView.renderNavCrumb();
+  }
+  $('.jumbotron').slideUp();
+};
+
+productView.renderNavCrumb = function() {
+  var ele ="<ol class='breadcrumb productNav'><li><a href='/'>Home</a></li><li><a href='/productivity'>Productivity</a></li></ol>";
+  if($('.productNav').length<1){
+    $('#category-filter').before(ele);
+  }
+
   $('#page').find('a').attr('href','/productivity');
   $('#page').find('a').text('Productivity');
 
