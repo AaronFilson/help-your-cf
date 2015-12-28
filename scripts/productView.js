@@ -56,6 +56,8 @@ productView.renderNavCrumb = function() {
     $('#category-filter').before(ele);
   }
 
+  $('#page').find('a').attr('href','/productivity');
+  $('#page').find('a').text('Productivity');
 
 };
 
