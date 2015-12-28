@@ -40,6 +40,7 @@ productView.renderGroup = function(products) {
 };
 
 productView.nav = function() {
+  $('.breadcrumbNav').fadeIn();
   $('#page').find('a').attr('href','/productivity');
   $('#page').find('a').text('Productivity');
 
