@@ -8,8 +8,6 @@ product.loadAll = function(callback) {
   webDB.execute('SELECT * FROM resource WHERE contentPage LIKE "productivity";'
   , function(data){
     //transform the data into what we need for the template
-    console.log('product data');
-    console.log(data);
     product.allData = [];
     var arrays = data.rows;
     for (var i=0; i < arrays.length; i++){
@@ -30,12 +28,10 @@ product.findByCategory = function(category,callback) {
     ],
 
     function(data){
-      console.log(data.rows);
       var products = [];
       for (var i=0; i<data.rows.length; i++){
         products.push(new Resource(data.rows[i]));
       }
-      console.log(products);
       callback(products);
     }
   );
