@@ -6,7 +6,8 @@ homeView.index = function() {
 };
 
 homeView.ui = function() {
+  $('.jumbotron').slideDown();
   $('#category-filter').hide();
-  $('.breadcrumb').hide();
   $('#home').siblings().hide();
+  $('.breadcrumbNav').hide();
 };

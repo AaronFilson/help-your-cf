@@ -1,5 +1,6 @@
-.breadcrumb {
+.breadcrumbNav {
   margin:3rem auto;
+  width:90%;
 }
 .breadcrumb a{
   color:black;

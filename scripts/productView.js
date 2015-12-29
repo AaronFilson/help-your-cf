@@ -5,6 +5,7 @@ productView.show = function(products) {
 };
 
 productView.index = function (){
+  console.log('productView.index');
   productView.loadTemplate(product.allData);
   productView.handleFilter();
 };
@@ -23,8 +24,9 @@ productView.loadTemplate = function(products) {
 };
 
 productView.renderGroup = function(products) {
+  productView.nav();
   $('#category-filter').fadeIn();
-  $('#projectNav').hide();
+  $('.projectNav').hide();
   $('#product')
   .empty()
   .fadeIn()
@@ -35,17 +37,16 @@ productView.renderGroup = function(products) {
   )
   .siblings()
   .hide();
-  if($('#productNav').css('display') === 'none' || $('#productNav').length === 0){
-    productView.renderNavCrumb();
-  }
 };
 
-productView.renderNavCrumb = function() {
-  var ele ="<ol class='breadcrumb' id='productNav'><li><a href='/'>Home</a></li><li><a href='/productivity'>Productivity</a></li></ol>";
+productView.nav = function() {
+  $('.breadcrumbNav').fadeIn();
+  $('#page').find('a').attr('href','/productivity');
+  $('#page').find('a').text('Productivity');
 
-  $('#category-filter').before(ele);
-
+  $('.jumbotron').slideUp();
 };
+
 
 productView.populateFilter = function() {
   var val;

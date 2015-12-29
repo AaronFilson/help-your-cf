@@ -19,6 +19,11 @@
   color:#9d9d9d;
 }
 
+.nav-padding-on-top {
+  padding-bottom: 15px;
+  margin: 5px;
+}
+
 /*front image*/
 .jumbotron {
   background-image:url('/images/homepage2.jpg');
@@ -36,8 +41,13 @@
   color: white;
 }
 
-.jumbotron h2 {
+.jumbotron h4 {
   color: white;
+}
+
+.jumbotron p {
+ color: white;
+ text-shadow: black -.05em .05em;
 }
 
 /*about us*/
@@ -65,7 +75,7 @@ select {
   padding: 5px;
   line-height: 1;
   border-radius: 2px;
-  width:20%;
+  width:50%;
 }
 
 #procut{
@@ -78,7 +88,7 @@ div.panel-default {
   margin: 3rem auto;
 }
 
-#productNav {
+.productNav {
   width:90%;
   color:black;
 }
@@ -90,7 +100,7 @@ div.panel-default {
   margin:5rem auto;
 }
 
-#projectNav{
+.projectNav{
   width:90%;
 }
 
@@ -100,8 +110,8 @@ div.panel-default {
   width:80%;
 }
 
-.companyContainer {
-  width: 90%;
+.container {
+  width: 100%;
 }
 img.companyImg {
   margin:2rem auto;
@@ -109,4 +119,12 @@ img.companyImg {
 .companyContainer a {
   color:#C2281E;
   font-size: 2rem;
+}
+
+.companyContainer a:hover {
+  color:#9d9d9d;
+  text-decoration:none;
+}
+.companyContainer a:active {
+  color:#9d9d9d;
 }

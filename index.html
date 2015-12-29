@@ -6,13 +6,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.3/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="/vendor/styles/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/styles/module.css">
     <link rel="stylesheet" href="/styles/base.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <title>Help Your Code Fellows</title>
   </head>
   <body>
     <header>
+      <div class="nav-padding-on-top">Hidden under the Nav bar.</div>
       <nav class="navbar navbar-inverse navbar-fixed-top">
           <div class="container">
               <div class="navbar-header">
@@ -42,9 +43,17 @@
         <h1 class="site-title">
           Help Your Code Fellows
         </h1>
-        <h2>Hi! Welcome to our helpful guide.</h2>
+        <h4>Hi! Welcome to our helpful guide, an unofficial resource for Code Fellows Seattle.</h4>
+        <p>The help-your-cf project is intended to give you information on productivity tools and tips, which companies are hiring, and student projects from prior classes - and more! Use the navigation bar above to select the resource you want. Enjoy!</p>
       </div>
     </div>
+
+    <nav class="breadcrumbNav">
+      <ol class="breadcrumb" id="aboutNav">
+        <li><a href="/">Home</a></li>
+        <li id="page"><a href="/about">About Us</a></li>
+      </ol>
+    </nav>
 
     <select id="category-filter">
       <option value="" class="default">Category Filter</option>
@@ -72,7 +81,7 @@
         <div id="projContainer">
           <div class="row">
             <div class="col-lg-12">
-              <h1 class="page-header">Codefellows Code 201
+              <h1 class="page-header">Code Fellows Code 201
                   <small>final projects</small>
               </h1>
             </div>
@@ -92,48 +101,39 @@
       </div>
    </footer>
 
-      <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.js"></script>
-      <script src="/vendor/jquery-2.1.4.min.js"></script>
-      <script src="/vendor/bootstrap.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.3/js/bootstrap-select.min.js"></script>
-      <script src="/vendor/handlebars-v4.0.5.js"></script>
-      <script src="/data/resource.json"></script>
-      <script src="/vendor/html5sql.js"></script>
-      <script src="/scripts/webdb.js"></script>
-      <script src="/scripts/resource.js"></script>
-      <script src="/scripts/database.js"></script>
+   <div>
+     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.js"></script>
+     <script src="/vendor/jquery-2.1.4.min.js"></script>
+     <script src="/vendor/bootstrap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.3/js/bootstrap-select.min.js"></script>
+     <script src="/vendor/handlebars-v4.0.5.js"></script>
+     <script src="/data/resource.json"></script>
+     <script src="/vendor/html5sql.js"></script>
+     <script src="/scripts/webdb.js"></script>
+     <script src="/scripts/resource.js"></script>
 
-      <script src="/scripts/resourceController.js"></script>
-      <script src="/scripts/resourceView.js"></script>
+       <!-- Model: -->
+      <script src="/scripts/product.js"></script>
+      <script src="/scripts/project.js"></script>
 
-    <!-- Model: -->
-   <script src="/scripts/product.js"></script>
-   <script src="/scripts/project.js"></script>
+      <!-- View: -->
+      <script src="/scripts/homeView.js"></script>
+      <script src="/scripts/aboutView.js"></script>
+      <script src="/scripts/productView.js"></script>
+      <script src="/scripts/companyView.js"></script>
+      <script src="/scripts/projectView.js"></script>
 
+      <!-- Controller: -->
+      <script src="/scripts/homeController.js"></script>
+      <script src="/scripts/aboutController.js"></script>
+      <script src="/scripts/productController.js"></script>
+      <script src="/scripts/companyController.js"></script>
+      <script src="/scripts/projectController.js"></script>
 
-   <!-- View: -->
-   <script src="/scripts/homeView.js"></script>
-   <script src="/scripts/aboutView.js"></script>
-   <script src="/scripts/productView.js"></script>
-   <script src="/scripts/companyView.js"></script>
-   <script src="/scripts/projectView.js"></script>
+      <!-- Router: -->
+      <script src="/scripts/router.js"></script>
 
-
-
-   <!-- Controller: -->
-   <script src="/scripts/homeController.js"></script>
-   <script src="/scripts/aboutController.js"></script>
-   <script src="/scripts/productController.js"></script>
-   <script src="/scripts/companyController.js"></script>
-   <script src="/scripts/projectController.js"></script>
-
-
-
-   <!-- Router: -->
-   <script src="/scripts/router.js"></script>
-
-
-
+   </div>
   </body>
 </html>

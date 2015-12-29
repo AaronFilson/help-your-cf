@@ -7,8 +7,6 @@ project.loadAll = function(callback) {
   webDB.execute('SELECT * FROM resource WHERE contentPage LIKE "project";'
   , function(data){
     //transform the data into what we need for the template
-    console.log('project data:');
-    console.log(data);
     project.allData = [];
     var arrays = data.rows;
     for (var i=0; i < arrays.length; i++){
