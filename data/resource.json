@@ -564,12 +564,23 @@
     "author":"",
     "date":"December 28, 2015"
   },
+  {
+  "url":"http://rayfindr.com/",
+  "title":"rayfindr",
+  "contentPage":"project",
+  "category":"code401 python",
+  "subcategory":"",
+  "mainContent":"/images/Rayfindr.jpg",
+  "description":"RayFindr is an API to visualize how the sun shines over Seattle. The data returned by the API currently shows the shadows cast by the buildings around the requested location.",
+  "author":"Jim Grant, Scott Schmidt, Jonathan Stallings, and Andrew Wilson",
+  "date":"November 20, 2015"
+},
 
   {
     "url":"https://github.com/Trivia-Crossroads/triviacrossroads",
     "title":"Trivia Crossroads",
     "contentPage":"project",
-    "category":"201",
+    "category":"code201",
     "subcategory":"Game",
     "mainContent":"/images/triviacrossroads.jpg",
     "description":"A meeting place for Trivia enthusiasts to find events and other likeminded people in Seattle.\n\nThis is a final project for Code Fellows 201d1.\n\nThe name Trivia Crossroads is based on the etymology of the word trivia, specifically: The word trivia comes from the Latin word trivium, meaning a meeting of three roads.",
@@ -577,10 +588,21 @@
     "date":"November 19, 2015"
   },
   {
+    "url":"http://www.ignitebot.com/",
+    "title":"IgniteBot",
+    "contentPage":"project",
+    "category":"Ruby on Rails DA",
+    "subcategory":"",
+    "mainContent":"/images/IgniteBot.jpg",
+    "description":" IgniteBot enables anyone to share an opportunity with their networks to take advantage of pooled resources and economies of scale. IgniteBot provides the tools for easy project tracking and payment.",
+    "author":"Mary Dickson, Brian Ray, Amy Kang",
+    "date":"November 20, 2015"
+  },
+  {
     "url":"https://github.com/wohlfea/cup-game",
     "title":"Slash Whooo?",
     "contentPage":"project",
-    "category":"201",
+    "category":"code201",
     "subcategory":"Game",
     "mainContent":"/images/slashWho.jpg",
     "description":"This is a game based on the cup and ball shuffling game. Instead of using a cup we use a picture of Slash and instead of the ball we use a family of owls under Slash's hat. The game starts off by displaying a start page with option parameters for the game. The option parameters are: number of shuffles and speed. The higher the number of shuffles and the faster the speed, the more points the user will score if they win the game. The user makes their options selection and clicks the start button, which takes them to the game page.",
@@ -591,7 +613,7 @@
     "url":"https://github.com/flegald/Echelon.JS/",
     "title":"Echelon.JS™",
     "contentPage":"project",
-    "category":"201",
+    "category":"code201",
     "subcategory":"Game",
     "mainContent":"/images/echelonJS.jpg",
     "description":"Echelon.JS is a game where you play the part of a secret agent on mission. Solve JavaScript puzzles to unlock the next stage.",
@@ -602,11 +624,23 @@
     "url":"https://github.com/Brandon-Parker/mortality",
     "title":"Inevitable Mortality",
     "contentPage":"project",
-    "category":"201",
+    "category":"code201",
     "subcategory":"Game",
     "mainContent":"/images/mortality.jpg",
     "description":"A mad-lib to 'predict' your death. It is not for children. The stories were written complete, and later determined which words would make the stories the most ridiculous as possible when replaced with random nouns, verbs, or adjectives.",
     "author":"Brandon Parker, Carson Parker, Sawako Ishida, Melissa Giaime",
+    "date":"November 20, 2015"
+  },
+
+  {
+    "url":" http://estmator.com/",
+    "title":"Estmator",
+    "contentPage":"project",
+    "category":"code401 python",
+    "subcategory":"",
+    "mainContent":"/images/estmator.jpg",
+    "description":" This web application provides a secure portal for sales people to utilize in creating and managing both clients and quotes. As soon as you log in, you're given the option to continue an existing quote or create new. The ability to manage client information right from the quote page allows for additional flexibility while on the move..",
+    "author":"Jonathan Stallings, Scott Schmidt, Andrew Wilson, Jim Grant",
     "date":"November 20, 2015"
   }
 ]
