@@ -104,6 +104,10 @@ div.panel-default {
   width:90%;
 }
 
+#projects span {
+  font-size:1.2rem;
+}
+
 /*Companies*/
 
 #companyNav{
@@ -115,10 +119,12 @@ div.panel-default {
 }
 img.companyImg {
   margin:2rem auto;
+  width:100%;
 }
 .companyContainer a {
   color:#C2281E;
   font-size: 2rem;
+  text-decoration:none;
 }
 
 .companyContainer a:hover {
