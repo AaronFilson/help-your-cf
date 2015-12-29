@@ -52,7 +52,6 @@ productView.populateFilter = function() {
   var val;
   var len =_.uniq(product.allData, function(product) {
     return product.category;
-    console.log(resource.category);
   }).length;
 
   if (len !== productView.optLen){
