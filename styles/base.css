@@ -1,0 +1,9 @@
+.breadcrumbNav {
+  margin:3rem auto;
+  width:90%;
+}
+.breadcrumb a{
+  color:black;
+  font-size: 16px;
+  font-weight: 500;
+}

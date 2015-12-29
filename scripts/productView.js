@@ -1,8 +1,12 @@
 var productView = {};
 
-productView.index = function (){
-  productView.loadTemplate(product.allData);
+productView.show = function(products) {
+  productView.loadTemplate(products);
+};
 
+productView.index = function (){
+  console.log('productView.index');
+  productView.loadTemplate(product.allData);
   productView.handleFilter();
 };
 
@@ -17,14 +21,13 @@ productView.loadTemplate = function(products) {
   };
 
   productView.populateFilter();
-  //
-  // if($('#category-filter').children().length === 1 && $('#category-filter').children().length === 1){
-  //   productView.populateFilter();
-  // }
 };
 
 productView.renderGroup = function(products) {
-  $('#content')
+  productView.nav();
+  $('#category-filter').fadeIn();
+  $('.projectNav').hide();
+  $('#product')
   .empty()
   .fadeIn()
   .append(
@@ -36,21 +39,37 @@ productView.renderGroup = function(products) {
   .hide();
 };
 
-productView.populateFilter = function() {
-  var val;
-  _.uniq(product.allData, function(product) {
-    return product.category;
-    console.log(resource.category);
-  }).forEach(function(resource) {
-    val = resource.category;
-    option = '<option value="' + val + '">' + val + '</option>';
-    $('#category-filter').append(option);
-  });
+productView.nav = function() {
+  $('.breadcrumbNav').fadeIn();
+  $('#page').find('a').attr('href','/productivity');
+  $('#page').find('a').text('Productivity');
+
+  $('.jumbotron').slideUp();
 };
 
-productView.show = function(products) {
-  productView.loadTemplate(products);
+
+productView.populateFilter = function() {
+  var val;
+  var len =_.uniq(product.allData, function(product) {
+    return product.category;
+    console.log(resource.category);
+  }).length;
+
+  if (len !== productView.optLen){
+    $('category-filter').empty();
+    _.uniq(product.allData, function(product) {
+      return product.category;
+      console.log(resource.category);
+    }).forEach(function(resource) {
+      val = resource.category;
+      option = '<option value="' + val + '">' + val + '</option>';
+      $('#category-filter').append(option);
+    });
+    productView.optLen = len;
+  }
+
 };
+
 
 productView.handleFilter = function() {
   $('#category-filter').on('change', function(event){
